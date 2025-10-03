@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+        <title>Descubra Seu Mundo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://edube.org/uploads/media/default/0001/04/web-favicon.png" type="image/png">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: #f8f8f8;
+                color: #222;
+            }
+            main {
+                max-width: 600px;
+                margin: auto;
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 1rem;
+            }
+            p {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+            #discoverLocation {
+                display: block;
+                margin: 1rem auto;
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+                background: #0078d7;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.2s;
+            }
+            #discoverLocation:focus {
+                outline: 2px solid #005fa3;
+                outline-offset: 2px;
+            }
+            #discoverLocation:hover {
+                background: #005fa3;
+            }
+            .map-container {
+                width: 100%;
+                max-width: 600px;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+            }
+            img[usemap] {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            }
+            @media (max-width: 700px) {
+                main {
+                    padding: 0.5rem;
+                }
+                h1 {
+                    font-size: 1.3rem;
+                }
+            }
+        </style>
+        <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Descubra Seu Mundo &#x1F30D</h1>
+        <p>Clique no botão para descobrir em qual continente você está e algumas características geográficas famosas.</p>
+        <button id="discoverLocation" aria-label="Descobrir localização do usuário">Descobrir Localização</button>
+        <div class="map-container">
+            <img src="https://edube.org/uploads/media/default/0001/04/continents.jpg" usemap="#image-map" alt="Mapa Mundi com áreas clicáveis para cada continente">
+        </div>
+        <map name="image-map">
+            <area target="" alt="América do Norte" title="América do Norte" id="north-america" coords="386,283,41,17" shape="rect" href="javascript:void(0);" tabindex="0">
+            <area target="" alt="América do Sul" title="América do Sul" id="south-america" coords="209,501,358,288" shape="rect" href="javascript:void(0);" tabindex="0">
+            <area target="" alt="Europa" title="Europa" id="europe" coords="391,68,505,217" shape="rect" href="javascript:void(0);" tabindex="0">
+            <area target="" alt="África" title="África" id="africa" coords="533,217,387,448" shape="rect" href="javascript:void(0);" tabindex="0">
+            <area target="" alt="Ásia" title="Ásia" id="asia" coords="893,153,506,1" shape="rect" href="javascript:void(0);" tabindex="0">
+            <area target="" alt="Austrália e Oceania" title="Austrália e Oceania" id="australia-and-oceania" coords="679,353,872,480" shape="rect" href="javascript:void(0);" tabindex="0">
+        </map>
+    </main>
+</body>
+</html>
+
+
